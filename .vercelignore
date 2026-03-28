@@ -1,0 +1,30 @@
+# Ignore local environment files
+.env
+.env.local
+
+# Ignore SQLite database (not usable on Vercel)
+db.sqlite3
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Ignore virtual environments
+venv/
+.venv/
+env/
+
+# Ignore media uploads (not persistent on Vercel)
+media/
+
+# Ignore VS Code config
+.vscode/
+
+# Ignore git
+.git/
+.gitignore
+
+# Ignore node modules
+node_modules/

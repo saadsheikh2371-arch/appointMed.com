@@ -1,0 +1,13 @@
+django>=5.0
+djangorestframework
+channels[daphne]
+channels-redis
+celery[redis]
+redis
+psycopg2-binary
+twilio
+django-environ
+django-ratelimit
+Pillow
+django-cors-headers
+whitenoise

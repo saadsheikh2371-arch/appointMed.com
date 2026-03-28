@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.12"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "wsgi.py"
+    }
+  ],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "cliniclink.settings.production",
+    "DEBUG": "False",
+    "SECURE_SSL_REDIRECT": "False"
+  },
+  "build": {
+    "env": {
+      "DJANGO_SETTINGS_MODULE": "cliniclink.settings.production",
+      "DEBUG": "False"
+    }
+  }
+}
